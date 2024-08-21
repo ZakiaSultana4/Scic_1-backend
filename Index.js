@@ -52,7 +52,7 @@ async function run() {
       
       // search query added with
       newQuery.name = { $regex: new RegExp(query.search, 'i') }
-      // sort  added    
+      // sort  fi added    
       switch (query.sort) {
         case 'date':
           queryOptions.sort = { created_at: 1 }
