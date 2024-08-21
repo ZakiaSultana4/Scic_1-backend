@@ -72,7 +72,7 @@ async function run() {
       if (query.category) {
         newQuery.category = query.category
       }
-      // filter - multiple brand
+      // filter - with multiple brand
       if (query.brands) {
         newQuery.brand = { $in: query.brands.split(' ') }
       }
