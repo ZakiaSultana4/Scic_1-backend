@@ -50,7 +50,7 @@ async function run() {
         limit
       }
       
-      // search query
+      // search query added
       newQuery.name = { $regex: new RegExp(query.search, 'i') }
       // sort      
       switch (query.sort) {
