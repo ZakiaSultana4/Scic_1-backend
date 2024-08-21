@@ -37,7 +37,7 @@ async function run() {
   try {
     const productsCollection = client.db('SCIC1DB').collection('products')
 
-    // get: all products with query
+    // get: all products with query add pagination added
     app.get('/products', async (req, res) => {
       const query = req.query
       let newQuery = {}     
