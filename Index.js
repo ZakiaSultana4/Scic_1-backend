@@ -68,7 +68,7 @@ async function run() {
           queryOptions.sort = {}
           break;
       }
-      // filter - category
+      // filter - with category
       if (query.category) {
         newQuery.category = query.category
       }
