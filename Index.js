@@ -76,7 +76,7 @@ async function run() {
       if (query.brands) {
         newQuery.brand = { $in: query.brands.split(' ') }
       }
-      // filter - price range
+      // filter - with price range 
       if (+query.priceMax) {
         newQuery.price = { $gte: +query.priceMin, $lte: +query.priceMax }
       }
